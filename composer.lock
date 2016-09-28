@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "edf8a7eb82d92afbb1ae2271b85d0e6d",
-    "content-hash": "77b036db13fbd04740b411fc2912e230",
+    "hash": "fb148ae7a6b2ac6f97f3383579a0c83d",
+    "content-hash": "fd2176406c8cfd6b3197213d8db19cd1",
     "packages": [
         {
             "name": "firebase/php-jwt",
@@ -100,16 +100,16 @@
         },
         {
             "name": "google/cloud",
-            "version": "v0.9.0",
+            "version": "dev-debug-mode",
             "source": {
                 "type": "git",
-                "url": "https://github.com/GoogleCloudPlatform/google-cloud-php.git",
-                "reference": "a972770d8f36687dbb34f23df7d6d76027bf2323"
+                "url": "https://github.com/jdpedrie/gcloud-php.git",
+                "reference": "357d30f798a423b1fc6d89e1f980139cce266a78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GoogleCloudPlatform/google-cloud-php/zipball/a972770d8f36687dbb34f23df7d6d76027bf2323",
-                "reference": "a972770d8f36687dbb34f23df7d6d76027bf2323",
+                "url": "https://api.github.com/repos/jdpedrie/gcloud-php/zipball/357d30f798a423b1fc6d89e1f980139cce266a78",
+                "reference": "357d30f798a423b1fc6d89e1f980139cce266a78",
                 "shasum": ""
             },
             "require": {
@@ -141,18 +141,27 @@
                     "Google\\Cloud\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Google\\Cloud\\Dev\\": "dev/src"
+                }
+            },
+            "scripts": {
+                "google-cloud": [
+                    "dev/google-cloud"
+                ]
+            },
             "license": [
                 "Apache-2.0"
             ],
             "authors": [
                 {
-                    "name": "John Pedrie",
-                    "email": "john@pedrie.com"
-                },
-                {
                     "name": "Dave Supplee",
                     "email": "dwsupplee@gmail.com"
+                },
+                {
+                    "name": "John Pedrie",
+                    "email": "john@pedrie.com"
                 }
             ],
             "description": "Google Cloud Client Library",
@@ -179,7 +188,10 @@
                 "translate",
                 "vision"
             ],
-            "time": "2016-09-26 15:59:01"
+            "support": {
+                "source": "https://github.com/jdpedrie/gcloud-php/tree/debug-mode"
+            },
+            "time": "2016-09-28 15:30:44"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -621,7 +633,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "google/cloud": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
