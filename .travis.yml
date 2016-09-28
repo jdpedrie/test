@@ -10,4 +10,4 @@ before_install:
   - php php-tools/scripts/dump_credentials.php
 
 script:
-  - ./test.sh
+  - $TRAVIS_BUILD_DIR/test.sh
