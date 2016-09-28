@@ -1,2 +1,6 @@
+env:
+  global:
+    - GOOGLE_APPLICATION_CREDENTIALS=$TRAVIS_BUILD_DIR/credentials.json
+
 script:
   - ./test.sh
