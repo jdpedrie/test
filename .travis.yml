@@ -11,4 +11,4 @@ before_install:
   - travis_retry php-tools/scripts/install_test_deps.sh
 
 script:
-  - $TRAVIS_BUILD_DIR/test.php
+  - php $TRAVIS_BUILD_DIR/test.php
