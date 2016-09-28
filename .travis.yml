@@ -9,6 +9,7 @@ before_install:
   - git clone https://github.com/GoogleCloudPlatform/php-tools.git
   - php php-tools/scripts/dump_credentials.php
   - travis_retry php-tools/scripts/install_test_deps.sh
+  - composer install
 
 script:
   - php $TRAVIS_BUILD_DIR/test.php
