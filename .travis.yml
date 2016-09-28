@@ -2,5 +2,10 @@ env:
   global:
     - GOOGLE_APPLICATION_CREDENTIALS=$TRAVIS_BUILD_DIR/credentials.json
 
+before_install:
+  - pushd ${HOME}
+  - git clone https://github.com/GoogleCloudPlatform/php-tools.git
+  - php php-tools/scripts/dump_credentials.php
+
 script:
   - ./test.sh
