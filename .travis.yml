@@ -11,7 +11,7 @@ before_install:
   - travis_retry php-tools/scripts/install_test_deps.sh
 
 before_script:
-  - composer install
+  - composer install -d $TRAVIS_BUILD_DIR
 
 script:
   - php $TRAVIS_BUILD_DIR/test.php
