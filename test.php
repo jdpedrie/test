@@ -2,6 +2,8 @@
 
 include __DIR__ . "/vendor/autoload.php";
 
+use Google\Cloud\ServiceBuilder;
+
 $cloud = new ServiceBuilder();
 $ds = $cloud->datastore();
 
