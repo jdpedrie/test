@@ -1,7 +1,7 @@
 {
     "name": "jdp/test",
     "require": {
-        "symfony/lock": "dev-master#1ba6ac9fcdd1a0699f33b52c371ce7b9cfb48a35"
+        "symfony/lock": "dev-master#1ba6ac9fcdd1a0699f33b52c371ce7b9cfb48a35@dev"
     },
     "authors": [
         {
