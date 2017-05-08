@@ -1,16 +1,12 @@
 {
     "name": "jdp/test",
     "require": {
-        "google/cloud": "dev-debug-mode"
+        "symfony/lock": "dev-master#1ba6ac9fcdd1a0699f33b52c371ce7b9cfb48a35"
     },
     "authors": [
         {
             "name": "jdpedrie",
             "email": "john@pedrie.com"
         }
-    ],
-    "repositories": [{
-        "type": "vcs",
-        "url": "https://github.com/jdpedrie/gcloud-php"
-    }]
+    ]
 }
